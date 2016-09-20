@@ -1,0 +1,43 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{{ partial "head.html" . }}
+</head>
+
+<body id="post-index" {{ if .Params.image.feature }}class="feature"{{ end }}>
+
+{{ partial "navigation.html" . }}
+
+<div class="entry-header">
+	{{ if .Params.image.credit }}<div class="image-credit">Image source: <a href="{{ .Params.image.creditlink }}">{{ .Params.image.credit }}</a></div><!-- /.image-credit -->{{ end }}
+  {{ if .Params.image.feature }}
+    <div class="entry-image">
+      <img src="{{ .Site.BaseURL }}/images/{{ .Params.image.feature }}" alt="{{ .Params.title }}">
+    </div><!-- /.entry-image -->
+  {{ end }}
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1>{{ .Site.Title }}</h1>
+      <h2>{{ .Title }}</h2>
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
+
+<div id="main" role="main">
+  {{ block "main" . }}
+  {{ end }}
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {{ partial "footer.html" . }}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+{{ partial "scripts.html" . }}
+
+</body>
+</html>
