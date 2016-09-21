@@ -41,7 +41,7 @@
 		<span class="entry-date date published updated"><time datetime="{{ .Date }}"><a href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></time></span>
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
-        {{ partial "read-time-index.html" . }}
+        Reading time ~{{ if le .ReadingTime 1 }}1 minute{{ else }}{{ .ReadingTime }} minutes{{ end }}
       </span><!-- /.entry-reading-time -->
     </div><!-- /.entry-meta -->
     {{ if .Params.link }}
