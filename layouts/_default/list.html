@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 <body id="post-index" {{ if isset ($.Scratch.Get "Params") "image" }}class="feature"{{ end }}>
-{{ partial "navigation.html" }}
+{{ partial "navigation.html" . }}
 <div class="entry-header">
   {{ if isset ($.Scratch.Get "Params") "image" }}
 {{ $imageparams := index ($.Scratch.Get "Params") "image" }}

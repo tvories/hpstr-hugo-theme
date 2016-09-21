@@ -5,42 +5,46 @@
 		<li>
 			<a href="#">About</a>
 			<ul class="dl-submenu">
+			{{ with .Site.Params.author }}
 				<li>
-					<img src="{{ .Site.BaseURL }}/images/{{ .Site.Author.avatar }}" alt="{{ .Site.Author.name }}'s photo" class="author-photo">
-					<h4>{{ .Site.Author.name }}</h4>
-					<p>{{ .Site.Author.bio }}</p>
+					{{ if isset . "avatar" }}
+					<img src="{{ .Site.BaseURL }}/images/{{ .avatar }}" alt="{{ .name }}'s photo" class="author-photo">
+					{{ end }}
+					<h4>{{ .name }}</h4>
+					<p>{{ .bio }}</p>
 				</li>
 				<li><a href="{{ .Site.BaseURL }}/about/"><span class="btn btn-inverse">Learn More</span></a></li>
-				{{ if .Site.Owner.email }}<li>
-					<a href="mailto:{{ .Site.Author.email }}"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				{{ if isset . "email" }}<li>
+					<a href="mailto:{{ .email }}"><i class="fa fa-fw fa-envelope"></i> Email</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.twitter }}<li>
-					<a href="https://twitter.com/{{ .Site.Owner.twitter }}"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				{{ if isset . "twitter" }}<li>
+					<a href="https://twitter.com/{{ .twitter }}"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.facebook }}<li>
-					<a href="https://facebook.com/{{ .Site.Owner.facebook }}"><i class="fa fa-fw fa-facebook"></i> Facebook</a>
+				{{ if isset . "facebook" }}<li>
+					<a href="https://facebook.com/{{ .facebook }}"><i class="fa fa-fw fa-facebook"></i> Facebook</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.google_plus }}<li>
-					<a href="https://google.com/{{ .Site.Owner.google_plus }}"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
+				{{ if isset . "google_plus" }}<li>
+					<a href="https://google.com/{{ .google_plus }}"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.linkedin }}<li>
-					<a href="https://linkedin.com/in/{{ .Site.Owner.linkedin }}"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+				{{ if isset . "linkedin" }}<li>
+					<a href="https://linkedin.com/in/{{ .linkedin }}"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.github }}<li>
-					<a href="https://github.com/{{ .Site.Owner.github }}"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				{{ if isset . "github" }}<li>
+					<a href="https://github.com/{{ .github }}"><i class="fa fa-fw fa-github"></i> GitHub</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.stackexchange }}<li>
-					<a href="{{ .Site.Owner.stackexchange }}"><i class="fa fa-fw fa-stack-exchange"></i> Stackexchange</a>
+				{{ if isset . "stackexchange" }}<li>
+					<a href="{{ .stackexchange }}"><i class="fa fa-fw fa-stack-exchange"></i> Stackexchange</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.instagram }}<li>
-					<a href="https://instagram.com/{{ .Site.Owner.instagram }}"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+				{{ if isset . "instagram" }}<li>
+					<a href="https://instagram.com/{{ .instagram }}"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.flickr }}<li>
-					<a href="https://www.flickr.com/photos/{{ .Site.Owner.flickr }}"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
+				{{ if isset . "flickr" }}<li>
+					<a href="https://www.flickr.com/photos/{{ .flickr }}"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
 				</li>{{ end }}
-				{{ if .Site.Owner.tumblr }}<li>
-					<a href="http://{{ .Site.Owner.tumblr }}.tumblr.com"><i class="fa fa-fw fa-tumblr"></i> Tumblr</a>
+				{{ if isset . "tumblr" }}<li>
+					<a href="http://{{ .tumblr }}.tumblr.com"><i class="fa fa-fw fa-tumblr"></i> Tumblr</a>
 				</li>{{ end }}
+			{{ end }}
 			</ul><!-- /.dl-submenu -->
 		</li>
 		<li>
@@ -50,7 +54,7 @@
 				<li><a href="{{ .Site.BaseURL }}/tags/">All Tags</a></li>
 			</ul>
 		</li>
-		{{ range .Site.Data.navigation }}
+		{{ range .Site.Data.navigation.links }}
 	    <li><a href="{{ .url }}" {{ if in .url "http" }}target="_blank"{{ end }}>{{ .title }}</a></li>
 	  {{ end }}
 	</ul><!-- /.dl-menu -->
