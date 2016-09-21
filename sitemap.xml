@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/</loc>
     <lastmod>2013-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/post-with-large-feature-image-and-text/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/post-with-large-feature-image-and-text/</loc>
     <lastmod>2013-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/a-post-with-images/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/a-post-with-images/</loc>
   </url>
   
   <url>
-    <loc>/posts/a-post-with-a-video/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/a-post-with-a-video/</loc>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/about/</loc>
   </url>
   
   <url>
-    <loc>/posts/post-with-a-background-image/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/post-with-a-background-image/</loc>
   </url>
   
   <url>
-    <loc>/posts/sample-link-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/sample-link-post/</loc>
   </url>
   
   <url>
-    <loc>/posts/sample-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/sample-post/</loc>
     <lastmod>2014-12-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/syntax-highlighting-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/syntax-highlighting-post/</loc>
     <lastmod>2016-06-01T15:27:45-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/testing-readability-with-a-bunch-of-text/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/testing-readability-with-a-bunch-of-text/</loc>
   </url>
   
   <url>
-    <loc>/theme-setup/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/theme-setup/</loc>
   </url>
   
 </urlset>
