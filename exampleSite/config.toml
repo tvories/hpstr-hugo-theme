@@ -12,8 +12,12 @@ relativeurls = true
 	another = "/:section/:slug/"
 [params]
 	subtitle = "An elegant, responsive theme for Hugo"
+	[params.author]
+		name = "Hugo"
+		avatar = "avatar.jpg"
+		bio = "A static site generator written in Go"
+		github = "spf13/hugo"
 	[params.image]
 	  feature = "abstract-1.jpg"
 	  credit = "dargadgetz"
 	  creditlink = "http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/"
-

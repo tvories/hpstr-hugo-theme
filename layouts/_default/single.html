@@ -41,7 +41,7 @@
       </footer>
     </div><!-- /.entry-content -->
     {{ if ne .Params.comments false }}
-    <section id="disqus_thread">{{ template "_internal/disqus.html" . }}</section><!-- /#disqus_thread -->
+    <section id="disqus_thread">{{ partial "disqus.html" . }}</section><!-- /#disqus_thread -->
     {{ end }}
     <!--{{ if ne .Type "page" }}{% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}{{ end }} -->
   </article>

@@ -1,5 +1,4 @@
 {{ partial "head.html" . }}
-{{ printf "%#v" $.Scratch}}
 <body id="post-index" {{ if isset ($.Scratch.Get "Params") "image" }}class="feature"{{ end }}>
 {{ partial "navigation.html" . }}
 <div class="entry-header">
