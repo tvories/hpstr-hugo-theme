@@ -7,9 +7,7 @@ PygmentsCodeFences = true
 Paginate = 3
 disqusShortname = "hpstrhugo"
 relativeurls = true
-[permalinks]
-	posts = "/:section/:slug/"
-	another = "/:section/:slug/"
+
 [params]
 	subtitle = "An elegant, responsive theme for Hugo"
 	[params.author]
