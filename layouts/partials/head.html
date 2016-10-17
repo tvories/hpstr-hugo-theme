@@ -48,6 +48,6 @@
     {{ $.Scratch.Set "Params" .Params }}
 {{ end }}
 {{ with .Params.background }}
-<style type="text/css">body {background-image:url({{ . | absURL }});}</style>
+<style type="text/css">body {background-image:url({{ $.Site.BaseURL }}{{ . }});}</style>
 {{ end }}
 </head>
