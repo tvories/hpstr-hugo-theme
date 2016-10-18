@@ -4,7 +4,7 @@
 <div class="entry-header">
   {{ if isset ($.Scratch.Get "Params") "image" }}
 {{ $imageparams := index ($.Scratch.Get "Params") "image" }}
-	{{ if $imageparams.credit }}<div class="image-credit">Image source: <a href="{{ $imageparams.creditlink }}">{{ $imageparams.credit }}</a></div><!-- /.image-credit -->{{ end }}
+	{{ if $imageparams.credit }}<div class="image-credit">Image credit: <a href="{{ $imageparams.creditlink }}">{{ $imageparams.credit }}</a></div><!-- /.image-credit -->{{ end }}
     <div class="entry-image">
       <img src="{{ $imageparams.feature | absURL }}" alt="{{ .Title }}">
     </div><!-- /.entry-image -->
@@ -29,7 +29,7 @@
 </div><!-- /.entry-header -->
 
 <div id="main" role="main">
-{{ range .Paginator.Pages }}
+{{ range where .Paginator.Pages "Type" "!=" "page" }}
 <article class="hentry">
   <header>
     {{ if .Params.image.feature }}

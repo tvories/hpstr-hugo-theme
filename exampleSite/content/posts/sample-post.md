@@ -2,7 +2,7 @@
 layout: post
 title: Sample Post
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-lastmod: 2014-12-24
+date: 2011-03-10
 tags: [sample post]
 image:
   feature: /images/abstract-3.jpg

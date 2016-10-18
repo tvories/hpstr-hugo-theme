@@ -2,7 +2,8 @@
 layout: post
 title: Syntax Highlighting Post
 description: "Demo post displaying the various ways of highlighting code in Markdown."
-lastmod: 2016-06-01T15:27:45-04:00
+date: 2013-08-16
+lastmod: 2016-09-05
 tags: [sample post, code, highlighting]
 image:
   feature: /images/abstract-10.jpg
