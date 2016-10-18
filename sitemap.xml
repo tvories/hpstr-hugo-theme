@@ -3,47 +3,52 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2013-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/post-with-large-feature-image-and-text/</loc>
-    <lastmod>2013-06-30T00:00:00+00:00</lastmod>
+    <loc>/posts/background-image/</loc>
+    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/a-post-with-images/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/a-post-with-a-video/</loc>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-  </url>
-  
-  <url>
-    <loc>/posts/post-with-a-background-image/</loc>
+    <loc>/posts/code-highlighting-post/</loc>
+    <lastmod>2016-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/sample-link-post/</loc>
+    <lastmod>2013-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/video-post/</loc>
+    <lastmod>2013-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/readability-feature-post/</loc>
+    <lastmod>2013-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/sample-post-images/</loc>
+    <lastmod>2013-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/readability-post/</loc>
+    <lastmod>2012-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/sample-post/</loc>
-    <lastmod>2014-12-24T00:00:00+00:00</lastmod>
+    <lastmod>2011-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/syntax-highlighting-post/</loc>
-    <lastmod>2016-06-01T15:27:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/testing-readability-with-a-bunch-of-text/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
