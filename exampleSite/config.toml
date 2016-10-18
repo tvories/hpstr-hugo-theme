@@ -4,7 +4,7 @@ title = "HPSTR"
 theme = "hpstr"
 pluralizelisttitles = false
 PygmentsCodeFences = true
-Paginate = 3
+Paginate = 5
 disqusShortname = "hpstrhugo"
 relativeurls = true
 
@@ -12,7 +12,7 @@ relativeurls = true
 	subtitle = "An elegant, responsive theme for Hugo"
 	[params.author]
 		name = "Hugo"
-		avatar = "avatar.jpg"
+		avatar = "/images/avatar.jpg"
 		bio = "A static site generator written in Go"
 		github = "spf13/hugo"
 	[params.image]

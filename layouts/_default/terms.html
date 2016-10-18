@@ -12,18 +12,7 @@
   <div class="header-title">
     <div class="header-title-wrap">
 		<h1><a href="/" title="Go to the homepage">{{ .Site.Title }}</a></h1>
-	  <h2>{{ if .IsHome }}
-            {{ .Site.Params.subtitle }}
-          {{ else if .IsNode }}
-            {{ $pagename := (index .Site.Data.sections (lower .Title)) }}
-            {{ if $pagename }}
-              {{  index $pagename "title"  }}
-            {{ else }}
-              {{ .Title }}
-            {{ end }}
-          {{ else if .IsPage }}
-            {{ .Title }}
-          {{ end }}</h2>
+	  <h2>{{ .Title }}</h2>
     </div><!-- /.header-title-wrap -->
   </div><!-- /.header-title -->
 </div><!-- /.entry-header -->
