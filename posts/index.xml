@@ -16,13 +16,12 @@
       
       <guid>/posts/background-image/</guid>
       <description>&lt;p&gt;Here be a sample post with a custom background image. To utilize this &amp;ldquo;feature&amp;rdquo; just add the following YAML to a post&amp;rsquo;s front matter.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;image&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt;
-  &lt;span style=&#34;color: #ae81ff&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;filename.png&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;/images/filename.png&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This little bit of YAML makes the assumption that your background image asset is in the &lt;code&gt;/images&lt;/code&gt; folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.&lt;/p&gt;
 
-&lt;p&gt;If you want to set a background image for the entire site just add &lt;code&gt;background: filename.png&lt;/code&gt; to your &lt;code&gt;_config.yml&lt;/code&gt; and BOOM &amp;mdash; background images on every page!&lt;/p&gt;
+&lt;p&gt;If you want to set a background image for the entire site just add &lt;code&gt;background: filename.png&lt;/code&gt; as a param in your &lt;code&gt;_config.yml&lt;/code&gt; and BOOM &amp;mdash; background images on every page!&lt;/p&gt;
 
 &lt;div xmlns:cc=&#34;http://creativecommons.org/ns#&#34; xmlns:dct=&#34;http://purl.org/dc/terms/&#34; about=&#34;http://subtlepatterns.com&#34; class=&#34;notice&#34;&gt;Background images from &lt;span property=&#34;dct:title&#34;&gt;Subtle Patterns&lt;/span&gt; (&lt;a rel=&#34;cc:attributionURL&#34; property=&#34;cc:attributionName&#34; href=&#34;http://subtlepatterns.com&#34;&gt;Subtle Patterns&lt;/a&gt;) / &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;
 </description>
@@ -40,21 +39,21 @@
 
 &lt;h3 id=&#34;highlighted-code-blocks:66c6194b579219ece66fa5e7f7fbc133&#34;&gt;Highlighted Code Blocks&lt;/h3&gt;
 
-&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/_sass/_syntax.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/static/css/_sass/_syntax.scss&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;#container&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;left;&lt;/span&gt;
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;margin&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;-240px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100%&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
 &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;{% raw %}&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
     {% if page.previous %}
         &lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ site.url }}{{ page.previous.url }}&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ page.previous.title }}&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
     {% endif %}
     {% if page.next %}
         &lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ site.url }}{{ page.next.url }}&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ page.next.title }}&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
     {% endif %}
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;{% endraw %}
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;module&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;Jekyll&lt;/span&gt;
   &lt;span style=&#34;color: #66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;TagIndex&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;Page&lt;/span&gt;
@@ -76,33 +75,33 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3 id=&#34;standard-code-block:66c6194b579219ece66fa5e7f7fbc133&#34;&gt;Standard Code Block&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #75715e&#34;&gt;{%&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;raw&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;%}&lt;/span&gt;&amp;lt;nav class=&amp;quot;pagination&amp;quot; role=&amp;quot;navigation&amp;quot;&amp;gt;
-    {% if page.previous %}
-        &amp;lt;a href=&amp;quot;{{ site.url }}{{ page.previous.url }}&amp;quot; class=&amp;quot;btn&amp;quot; title=&amp;quot;{{ page.previous.title }}&amp;quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
-    {% endif %}
-    {% if page.next %}
-        &amp;lt;a href=&amp;quot;{{ site.url }}{{ page.next.url }}&amp;quot; class=&amp;quot;btn&amp;quot; title=&amp;quot;{{ page.next.title }}&amp;quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
-    {% endif %}
-&amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;span style=&#34;color: #75715e&#34;&gt;{%&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;endraw&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;%}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;nav&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;{%&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;page.previous&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;%}&lt;/span&gt;
+        &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;a&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;href=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;site.url&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;}}{{&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;page.previous.url&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;page.previous.title&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;{%&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;endif&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;%}&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;{%&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;page.next&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;%}&lt;/span&gt;
+        &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;a&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;href=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;site.url&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;}}{{&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;page.next.url&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;page.next.title&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;{%&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;endif&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;%}&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3 id=&#34;fenced-code-blocks:66c6194b579219ece66fa5e7f7fbc133&#34;&gt;Fenced Code Blocks&lt;/h3&gt;
 
-&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/_sass/_coderay.scss&lt;/code&gt;. Line numbers and a few other things can be lastmod in &lt;code&gt;_config.yml&lt;/code&gt;. Consult &lt;a href=&#34;http://jekyllrb.com/docs/configuration/&#34;&gt;Jekyll&amp;rsquo;s documentation&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/static/css/_sass/_coderay.scss&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;#container&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;left;&lt;/span&gt;
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;margin&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;-240px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100%&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
 &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;{% raw %}&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;pagination&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;role&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
     {% if page.previous %}
         &lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ site.url }}{{ page.previous.url }}&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ page.previous.title }}&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
     {% endif %}
     {% if page.next %}
         &lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ site.url }}{{ page.next.url }}&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;btn&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;{{ page.next.title }}&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;
     {% endif %}
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;{% endraw %}
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;nav&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;module&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;Jekyll&lt;/span&gt;
   &lt;span style=&#34;color: #66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;TagIndex&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;Page&lt;/span&gt;
@@ -276,38 +275,6 @@
     &lt;a href=&#34;//placehold.it/1200x600.jpg&#34;&gt;&lt;img src=&#34;//placehold.it/600x300.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Three images.&lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;h3 id=&#34;alternative-way:8dc9a7662f04228157a4900821eb467c&#34;&gt;Alternative way&lt;/h3&gt;
-
-&lt;p&gt;Another way to achieve the same result is to include &lt;code&gt;gallery&lt;/code&gt; Liquid template. In this case you
-don&amp;rsquo;t have to write any HTML tags – just copy a small block of code, adjust the parameters (see below)
-and fill the block with any number of links to images. You can mix relative and external links.&lt;/p&gt;
-
-&lt;p&gt;Here is the block you might want to use:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{% &lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;raw&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt; %}&lt;/span&gt;{% capture images %}
-	/images/abstract-10.jpg
-	/images/abstract-11.jpg
-	//upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
-{% endcapture %}
-{% include gallery images=images caption=&amp;quot;Test images&amp;quot; cols=3 %}&lt;span style=&#34;color: #f8f8f2&#34;&gt;{% &lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;endraw&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt; %}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;caption&lt;/code&gt;: Sets the caption under the gallery (see &lt;code&gt;figcaption&lt;/code&gt; HTML tag above);&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cols&lt;/code&gt;: Sets the number of columns of the gallery.
-Available values: [1..3].&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It will look something like this:&lt;/p&gt;
-
-&lt;p&gt;{% capture images %}
-    /images/abstract-10.jpg
-    /images/abstract-11.jpg
-    //upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
-{% endcapture %}
-{% include gallery images=images caption=&amp;ldquo;Test images&amp;rdquo; cols=3 %}&lt;/p&gt;
 </description>
     </item>
     
@@ -388,8 +355,7 @@ Available values: [1..3].&lt;/li&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/3953273590_704e3899d5_m.jpg&#34; alt=&#34;Smithsonian Image&#34; /&gt;
-{: .image-right}&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Smithsonian Image&#34; src=&#34;../images/3953273590_704e3899d5_m.jpg&#34; style=&#34;float: right;&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times &lt;cite&gt;(That’s a citation)&lt;/cite&gt;. &lt;u&gt;Underline&lt;/u&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
 
@@ -449,12 +415,6 @@ Available values: [1..3].&lt;/li&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;&amp;mdash;-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;cell1&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;cell2&lt;/td&gt;
 &lt;td align=&#34;right&#34;&gt;cell3&lt;/td&gt;
@@ -467,20 +427,12 @@ Available values: [1..3].&lt;/li&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;=====&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;Foot1&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;Foot2&lt;/td&gt;
 &lt;td align=&#34;right&#34;&gt;Foot3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;{: rules=&amp;ldquo;groups&amp;rdquo;}&lt;/p&gt;
 
 &lt;h2 id=&#34;code-snippets:db066b5c0fbbd5a43fb5b0a63c534e41&#34;&gt;Code Snippets&lt;/h2&gt;
 

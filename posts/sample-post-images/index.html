@@ -130,7 +130,7 @@
         
       <p class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
-        Reading time ~2 minutes
+        Reading time ~1 minute
     </p>
       </div>
     </header>
@@ -190,38 +190,6 @@
     <a href="//placehold.it/1200x600.jpg"><img src="//placehold.it/600x300.jpg" alt=""></a>
     <figcaption>Three images.</figcaption>
 </figure>
-
-<h3 id="alternative-way:8dc9a7662f04228157a4900821eb467c">Alternative way</h3>
-
-<p>Another way to achieve the same result is to include <code>gallery</code> Liquid template. In this case you
-don&rsquo;t have to write any HTML tags – just copy a small block of code, adjust the parameters (see below)
-and fill the block with any number of links to images. You can mix relative and external links.</p>
-
-<p>Here is the block you might want to use:</p>
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">{% </span><span style="color: #f92672">raw</span><span style="color: #f8f8f2"> %}</span>{% capture images %}
-	/images/abstract-10.jpg
-	/images/abstract-11.jpg
-	//upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
-{% endcapture %}
-{% include gallery images=images caption=&quot;Test images&quot; cols=3 %}<span style="color: #f8f8f2">{% </span><span style="color: #f92672">endraw</span><span style="color: #f8f8f2"> %}</span>
-</pre></div>
-
-<p>Parameters:</p>
-
-<ul>
-<li><code>caption</code>: Sets the caption under the gallery (see <code>figcaption</code> HTML tag above);</li>
-<li><code>cols</code>: Sets the number of columns of the gallery.
-Available values: [1..3].</li>
-</ul>
-
-<p>It will look something like this:</p>
-
-<p>{% capture images %}
-    /images/abstract-10.jpg
-    /images/abstract-11.jpg
-    //upload.wikimedia.org/wikipedia/en/2/24/Lenna.png
-{% endcapture %}
-{% include gallery images=images caption=&ldquo;Test images&rdquo; cols=3 %}</p>
 
       <footer class="entry-meta">
           
