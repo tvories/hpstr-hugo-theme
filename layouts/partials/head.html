@@ -7,11 +7,17 @@
 <meta charset="utf-8">
 <title>{{ if eq .IsHome false }}{{ .Title }} &#8211; {{ end }}{{ .Site.Title }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ if .IsHome }}
+    {{ $.Scratch.Set "Params" .Site.Params }}
+{{ else if .IsNode }}
+    {{ $.Scratch.Set "Params" (index .Site.Data.sections (lower .Title)) }}
+{{ else }}
+    {{ $.Scratch.Set "Params" .Params }}
+{{ end }}
 {{ if .Params.tags }}<meta name="keywords" content="{{ delimit .Params.tags ", " }}">{{ end }}
 
-{{ template "_internal/twitter_cards.html" . }}
-<!-- Open Graph -->
-{{ template "_internal/opengraph.html" . }}
+<!-- Open Graph and Twitter cards -->
+{{ partial "twitter_og_cards.html" . }}
 
 {{ with .Site.Params.google_verify }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
 {{ with .Site.Params.bing_verify }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
@@ -40,13 +46,6 @@
 <!-- Icons -->
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.png">
 
-{{ if .IsHome }}
-    {{ $.Scratch.Set "Params" .Site.Params }}
-{{ else if .IsNode }}
-    {{ $.Scratch.Set "Params" (index .Site.Data.sections (lower .Title)) }}
-{{ else }}
-    {{ $.Scratch.Set "Params" .Params }}
-{{ end }}
 {{ with .Params.background }}
 <style type="text/css">body {background-image:url({{ . | absURL }});}</style>
 {{ end }}
