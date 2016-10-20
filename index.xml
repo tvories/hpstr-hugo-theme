@@ -681,7 +681,7 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 &lt;li&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/posts/code-highlighting-post/&#34;&gt;Syntax highlighting&lt;/a&gt; stylesheets to make your code examples look snazzy.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div markdown=&#34;0&#34;&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/theme-setup/&#34; class=&#34;btn btn-info&#34;&gt;Theme Setup&lt;/a&gt; &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme&#34; class=&#34;btn btn-success&#34;&gt;Download HPSTR&lt;/a&gt;&lt;/div&gt;
+&lt;div markdown=&#34;0&#34;&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/theme-setup/&#34; class=&#34;btn btn-info&#34;&gt;Theme Setup&lt;/a&gt; &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme&#34; class=&#34;btn btn-success&#34;&gt;Download HPSTR&lt;/a&gt;&lt;/div&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 
 &lt;hr /&gt;
