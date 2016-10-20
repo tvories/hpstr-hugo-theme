@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Video on HPSTR</title>
-    <link>/tags/video/</link>
+    <link>https://localhost:5000/tags/video/</link>
     <description>Recent content in Video on HPSTR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 25 Jun 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://localhost:5000/tags/video/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A Post with a Video</title>
-      <link>/posts/video-post/</link>
+      <link>https://localhost:5000/posts/video-post/</link>
       <pubDate>Tue, 25 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>/posts/video-post/</guid>
+      <guid>https://localhost:5000/posts/video-post/</guid>
       <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/SU3kYxJmWuQ&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&#34;http://fitvidsjs.com/&#34;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;

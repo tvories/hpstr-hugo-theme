@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Images on HPSTR</title>
-    <link>/tags/images/</link>
+    <link>https://localhost:5000/tags/images/</link>
     <description>Recent content in Images on HPSTR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 22 May 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://localhost:5000/tags/images/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A Post with Images</title>
-      <link>/posts/sample-post-images/</link>
+      <link>https://localhost:5000/posts/sample-post-images/</link>
       <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/posts/sample-post-images/</guid>
+      <guid>https://localhost:5000/posts/sample-post-images/</guid>
       <description>
 
 &lt;p&gt;Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use &lt;code&gt;figure&lt;/code&gt; with the appropriate &lt;code&gt;class&lt;/code&gt;. Each instance of &lt;code&gt;figure&lt;/code&gt; is auto-numbered and displayed in the caption.&lt;/p&gt;
