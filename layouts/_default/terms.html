@@ -30,7 +30,7 @@
 	<h2 id="{{ $key }}" class="tag-heading">{{ $key }}</h2>
 		<ul>
             {{ range $value.Pages.ByDate.Reverse }}
-              <li class="entry-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></li>
+              <li class="entry-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></li>
             {{ end}}
 		</ul>
 	</article><!-- /.hentry -->

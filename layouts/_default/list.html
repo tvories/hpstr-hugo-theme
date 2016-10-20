@@ -6,7 +6,7 @@
 {{ $imageparams := index ($.Scratch.Get "Params") "image" }}
 	{{ if $imageparams.credit }}<div class="image-credit">Image credit: <a href="{{ $imageparams.creditlink }}">{{ $imageparams.credit }}</a></div><!-- /.image-credit -->{{ end }}
     <div class="entry-image">
-      <img src="{{ $imageparams.feature | absURL }}" alt="{{ .Title }}">
+      <img src="{{ $imageparams.feature | relURL }}" alt="{{ .Title }}">
     </div><!-- /.entry-image -->
   {{ end }}
   <div class="header-title">
@@ -34,20 +34,20 @@
   <header>
     {{ if .Params.image.feature }}
       <div class="entry-image-index">
-		  <a href="{{ .Permalink }}" title="{{ .Title }}"><img src="{{ .Params.image.feature | absURL }}" alt="{{ .Title }}"></a>
+		  <a href="{{ .RelPermalink }}" title="{{ .Title }}"><img src="{{ .Params.image.feature | relURL }}" alt="{{ .Title }}"></a>
       </div><!-- /.entry-image -->
     {{ end }}
     <div class="entry-meta">
-		<span class="entry-date date published updated"><time datetime="{{ .Date }}"><a href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></time></span>
+		<span class="entry-date date published updated"><time datetime="{{ .Date }}"><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></time></span>
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         Reading time ~{{ if le .ReadingTime 1 }}1 minute{{ else }}{{ .ReadingTime }} minutes{{ end }}
       </span><!-- /.entry-reading-time -->
     </div><!-- /.entry-meta -->
     {{ if .Params.link }}
-      <h1 class="entry-title"><a href="{{ .Permalink }}" class="permalink" rel="bookmark" title="{{ .Title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ .Params.link }}">{{ .Title }}</a></h1>
+      <h1 class="entry-title"><a href="{{ .RelPermalink }}" class="permalink" rel="bookmark" title="{{ .Title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ .Params.link }}">{{ .Title }}</a></h1>
     {{ else }}
-	<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark" title="{{ .Title }}" itemprop="url">{{ .Title }}</a></h1>
+	<h1 class="entry-title"><a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}" itemprop="url">{{ .Title }}</a></h1>
     {{ end }}
   </header>
   <div class="entry-content">
