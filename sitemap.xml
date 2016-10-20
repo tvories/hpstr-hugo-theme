@@ -3,8 +3,13 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2016-06-01T15:14:43-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/theme-setup/</loc>
+    <lastmod>2016-06-01T15:14:43-04:00</lastmod>
   </url>
   
   <url>
@@ -49,10 +54,6 @@
   
   <url>
     <loc>/about/</loc>
-  </url>
-  
-  <url>
-    <loc>/theme-setup/</loc>
   </url>
   
 </urlset>
