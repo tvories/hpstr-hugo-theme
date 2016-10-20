@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://localhost:5000/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/</loc>
     <lastmod>2016-06-01T15:14:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://localhost:5000/theme-setup/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/theme-setup/</loc>
     <lastmod>2016-06-01T15:14:43-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/background-image/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/background-image/</loc>
     <lastmod>2013-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/code-highlighting-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/code-highlighting-post/</loc>
     <lastmod>2016-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/sample-link-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/sample-link-post/</loc>
     <lastmod>2013-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/video-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/video-post/</loc>
     <lastmod>2013-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/readability-feature-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/readability-feature-post/</loc>
     <lastmod>2013-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/sample-post-images/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/sample-post-images/</loc>
     <lastmod>2013-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/readability-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/readability-post/</loc>
     <lastmod>2012-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/posts/sample-post/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/posts/sample-post/</loc>
     <lastmod>2011-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://localhost:5000/about/</loc>
+    <loc>https://dldx.github.io/hpstr-hugo-theme/about/</loc>
   </url>
   
 </urlset>
