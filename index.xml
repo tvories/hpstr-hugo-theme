@@ -138,38 +138,38 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
   &lt;span style=&#34;color: #ae81ff&#34;&gt;creditlink&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;http://mademistakes.com&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;#url to their site or licensing&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;By default the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; containing feature images is set to have a minimum height of 400px with CSS. Anything taller is hidden with an &lt;code&gt;overflow: hidden&lt;/code&gt; declaration. You can customize the height of the homepage feature image and those appearing on posts/pages by modifying the following variables in &lt;code&gt;/_sass/_variables.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;By default the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; containing feature images is set to have a minimum height of 400px with CSS. Anything taller is hidden with an &lt;code&gt;overflow: hidden&lt;/code&gt; declaration. You can customize the height of the homepage feature image and those appearing on posts/pages by modifying the following variables in &lt;code&gt;/static/css/_sass/_variables.scss&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$feature-image-height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// min 150px recommended&lt;/span&gt;
 &lt;span style=&#34;color: #f8f8f2&#34;&gt;$front-page-feature-image-height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// min 150px recommended&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;h4 id=&#34;post-page-thumbnails-for-og-and-twitter-cards:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Post/Page Thumbnails for OG and Twitter Cards&lt;/h4&gt;
 
-&lt;p&gt;Post and page thumbnails work the same way. These are used by &lt;a href=&#34;https://developers.facebook.com/docs/opengraph/&#34;&gt;Open Graph&lt;/a&gt; and &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;Twitter Cards&lt;/a&gt; meta tags found in &lt;code&gt;head.html&lt;/code&gt;. If you don&amp;rsquo;t assign a thumbnail the image you assigned to &lt;code&gt;site.owner.avatar&lt;/code&gt; in &lt;code&gt;_config.yml&lt;/code&gt; will be used.&lt;/p&gt;
+&lt;p&gt;Post and page thumbnails work the same way. These are used by &lt;a href=&#34;https://developers.facebook.com/docs/opengraph/&#34;&gt;Open Graph&lt;/a&gt; and &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;Twitter Cards&lt;/a&gt; meta tags found in &lt;code&gt;partials/twitter-og-cards.html&lt;/code&gt;. If you don&amp;rsquo;t assign a thumbnail the image you assigned to &lt;code&gt;params.author.avatar&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; will be used.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post&amp;rsquo;s YAML.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;{{ site.url }}/images/twitter-card-summary-large-image.jpg&#34; alt=&#34;Twitter Card summary large image screenshot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dldx.github.io/hpstr-hugo-theme/images/twitter-card-summary-large-image.jpg&#34; alt=&#34;Twitter Card summary large image screenshot&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to &lt;code&gt;head.html&lt;/code&gt; to support this, you just need to &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;validate and apply your domain&lt;/a&gt; to turn it on.&lt;/p&gt;
 
 &lt;h3 id=&#34;videos:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Videos&lt;/h3&gt;
 
 &lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&#34;http://fitvidsjs.com/&#34;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;twitter-cards:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Twitter Cards&lt;/h3&gt;
-
-&lt;p&gt;Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to &lt;code&gt;head.html&lt;/code&gt; to support this, you just need to &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;validate and apply your domain&lt;/a&gt; to turn it on.&lt;/p&gt;
-
 &lt;h3 id=&#34;link-post-type:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Link Post Type&lt;/h3&gt;
 
-&lt;p&gt;Link blog like a champ by adding &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to a post&amp;rsquo;s YAML front matter. Arrow glyph links to the post&amp;rsquo;s permalink and the the &lt;code&gt;post-title&lt;/code&gt; links to the source URL. Here&amp;rsquo;s an &lt;a href=&#34;{{ site.url }}/sample-link-post/&#34;&gt;example of a link post&lt;/a&gt; if you need a visual.&lt;/p&gt;
+&lt;p&gt;Link blog like a champ by adding &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to a post&amp;rsquo;s YAML front matter. Arrow glyph links to the post&amp;rsquo;s permalink and the the &lt;code&gt;post-title&lt;/code&gt; links to the source URL. Here&amp;rsquo;s an &lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/posts/sample-link-post/&#34;&gt;example of a link post&lt;/a&gt; if you need a visual.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;further-customization:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Further Customization&lt;/h2&gt;
 
-&lt;p&gt;Jekyll 2.x added support for Sass files making it much easier to modify a theme&amp;rsquo;s fonts and colors. By editing values found in &lt;code&gt;_sass/variables.scss&lt;/code&gt; you can fine tune the site&amp;rsquo;s colors and typography.&lt;/p&gt;
+&lt;p&gt;By editing values found in &lt;code&gt;static/css/_sass/variables.scss&lt;/code&gt; you can fine tune the site&amp;rsquo;s colors and typography. You will need a &lt;a href=&#34;http://sass-lang.com&#34;&gt;sass processor&lt;/a&gt; to render the files to css.&lt;/p&gt;
 
 &lt;p&gt;For example if you wanted a red background instead of white you&amp;rsquo;d change &lt;code&gt;$bodycolor: #fff;&lt;/code&gt; to &lt;code&gt;$bodycolor: $cc0033;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note from dldx: I haven&amp;rsquo;t changed the Gruntfile to work for hugo yet. If anyone would like to submit a PR, feel free! :) The following is just the original documentation for this theme&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;To modify the site&amp;rsquo;s JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into &lt;code&gt;scripts.min.js&lt;/code&gt;. &lt;a href=&#34;http://nodejs.org/&#34;&gt;Install Node.js&lt;/a&gt;, then &lt;a href=&#34;http://gruntjs.com/getting-started&#34;&gt;install Grunt&lt;/a&gt;, and then finally install the dependencies for the theme contained in &lt;code&gt;package.json&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;npm install
@@ -183,15 +183,13 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 
 &lt;h2 id=&#34;questions:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Questions?&lt;/h2&gt;
 
-&lt;p&gt;Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter &lt;a href=&#34;http://twitter.com/mmistakes&#34;&gt;@mmistakes&lt;/a&gt; or &lt;a href=&#34;https://github.com/mmistakes/hpstr-jekyll-theme/issues/new&#34;&gt;file a GitHub Issue&lt;/a&gt;. And if you make something cool with this theme feel free to let me know.&lt;/p&gt;
+&lt;p&gt;Having a problem getting something to work or want to know why I setup something in a certain way? You can contact me on &lt;a href=&#34;https://github.com/dldx&#34;&gt;github&lt;/a&gt; or &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme/issues/new&#34;&gt;file a GitHub Issue&lt;/a&gt;. And if you make something cool with this theme feel free to let me know.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;license:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;License&lt;/h2&gt;
 
-&lt;p&gt;This theme is free and open source software, distributed under the &lt;a href=&#34;{{ site.url }}/LICENSE&#34;&gt;MIT License&lt;/a&gt; version 2 or later. So feel free to to modify this theme to suit your needs.&lt;/p&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;This theme is free and open source software, distributed under the &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme/blob/master/LICENSE.md&#34;&gt;MIT License&lt;/a&gt; version 2 or later. So feel free to to modify this theme to suit your needs.&lt;/p&gt;
 </description>
     </item>
     

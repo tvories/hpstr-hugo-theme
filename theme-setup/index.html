@@ -263,38 +263,38 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
   <span style="color: #ae81ff">creditlink</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">http://mademistakes.com</span> <span style="color: #75715e">#url to their site or licensing</span>
 </pre></div>
 
-<p>By default the <code>&lt;div&gt;</code> containing feature images is set to have a minimum height of 400px with CSS. Anything taller is hidden with an <code>overflow: hidden</code> declaration. You can customize the height of the homepage feature image and those appearing on posts/pages by modifying the following variables in <code>/_sass/_variables.scss</code>.</p>
+<p>By default the <code>&lt;div&gt;</code> containing feature images is set to have a minimum height of 400px with CSS. Anything taller is hidden with an <code>overflow: hidden</code> declaration. You can customize the height of the homepage feature image and those appearing on posts/pages by modifying the following variables in <code>/static/css/_sass/_variables.scss</code>.</p>
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$feature-image-height</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">400</span><span style="color: #66d9ef">px</span><span style="color: #f8f8f2">;</span> <span style="color: #75715e">// min 150px recommended</span>
 <span style="color: #f8f8f2">$front-page-feature-image-height</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">400</span><span style="color: #66d9ef">px</span><span style="color: #f8f8f2">;</span> <span style="color: #75715e">// min 150px recommended</span>
 </pre></div>
 
 <h4 id="post-page-thumbnails-for-og-and-twitter-cards:b8b08bb87737c3c5c8e714d4f8821e60">Post/Page Thumbnails for OG and Twitter Cards</h4>
 
-<p>Post and page thumbnails work the same way. These are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> meta tags found in <code>head.html</code>. If you don&rsquo;t assign a thumbnail the image you assigned to <code>site.owner.avatar</code> in <code>_config.yml</code> will be used.</p>
+<p>Post and page thumbnails work the same way. These are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> meta tags found in <code>partials/twitter-og-cards.html</code>. If you don&rsquo;t assign a thumbnail the image you assigned to <code>params.author.avatar</code> in <code>config.toml</code> will be used.</p>
 
 <p>Here&rsquo;s an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post&rsquo;s YAML.</p>
 
-<p><img src="{{ site.url }}/images/twitter-card-summary-large-image.jpg" alt="Twitter Card summary large image screenshot" /></p>
+<p><img src="/images/twitter-card-summary-large-image.jpg" alt="Twitter Card summary large image screenshot" /></p>
+
+<p>Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to <code>head.html</code> to support this, you just need to <a href="https://dev.twitter.com/docs/cards">validate and apply your domain</a> to turn it on.</p>
 
 <h3 id="videos:b8b08bb87737c3c5c8e714d4f8821e60">Videos</h3>
 
 <p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p>
 
-<h3 id="twitter-cards:b8b08bb87737c3c5c8e714d4f8821e60">Twitter Cards</h3>
-
-<p>Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to <code>head.html</code> to support this, you just need to <a href="https://dev.twitter.com/docs/cards">validate and apply your domain</a> to turn it on.</p>
-
 <h3 id="link-post-type:b8b08bb87737c3c5c8e714d4f8821e60">Link Post Type</h3>
 
-<p>Link blog like a champ by adding <code>link: http://url-you-want-linked</code> to a post&rsquo;s YAML front matter. Arrow glyph links to the post&rsquo;s permalink and the the <code>post-title</code> links to the source URL. Here&rsquo;s an <a href="{{ site.url }}/sample-link-post/">example of a link post</a> if you need a visual.</p>
+<p>Link blog like a champ by adding <code>link: http://url-you-want-linked</code> to a post&rsquo;s YAML front matter. Arrow glyph links to the post&rsquo;s permalink and the the <code>post-title</code> links to the source URL. Here&rsquo;s an <a href="/hpstr-hugo-theme/posts/sample-link-post/">example of a link post</a> if you need a visual.</p>
 
 <hr />
 
 <h2 id="further-customization:b8b08bb87737c3c5c8e714d4f8821e60">Further Customization</h2>
 
-<p>Jekyll 2.x added support for Sass files making it much easier to modify a theme&rsquo;s fonts and colors. By editing values found in <code>_sass/variables.scss</code> you can fine tune the site&rsquo;s colors and typography.</p>
+<p>By editing values found in <code>static/css/_sass/variables.scss</code> you can fine tune the site&rsquo;s colors and typography. You will need a <a href="http://sass-lang.com">sass processor</a> to render the files to css.</p>
 
 <p>For example if you wanted a red background instead of white you&rsquo;d change <code>$bodycolor: #fff;</code> to <code>$bodycolor: $cc0033;</code>.</p>
+
+<p><em>Note from dldx: I haven&rsquo;t changed the Gruntfile to work for hugo yet. If anyone would like to submit a PR, feel free! :) The following is just the original documentation for this theme</em></p>
 
 <p>To modify the site&rsquo;s JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into <code>scripts.min.js</code>. <a href="http://nodejs.org/">Install Node.js</a>, then <a href="http://gruntjs.com/getting-started">install Grunt</a>, and then finally install the dependencies for the theme contained in <code>package.json</code>:</p>
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%">npm install
@@ -308,15 +308,13 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 
 <h2 id="questions:b8b08bb87737c3c5c8e714d4f8821e60">Questions?</h2>
 
-<p>Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter <a href="http://twitter.com/mmistakes">@mmistakes</a> or <a href="https://github.com/mmistakes/hpstr-jekyll-theme/issues/new">file a GitHub Issue</a>. And if you make something cool with this theme feel free to let me know.</p>
+<p>Having a problem getting something to work or want to know why I setup something in a certain way? You can contact me on <a href="https://github.com/dldx">github</a> or <a href="https://github.com/dldx/hpstr-hugo-theme/issues/new">file a GitHub Issue</a>. And if you make something cool with this theme feel free to let me know.</p>
 
 <hr />
 
 <h2 id="license:b8b08bb87737c3c5c8e714d4f8821e60">License</h2>
 
-<p>This theme is free and open source software, distributed under the <a href="{{ site.url }}/LICENSE">MIT License</a> version 2 or later. So feel free to to modify this theme to suit your needs.</p>
-
-<hr />
+<p>This theme is free and open source software, distributed under the <a href="https://github.com/dldx/hpstr-hugo-theme/blob/master/LICENSE.md">MIT License</a> version 2 or later. So feel free to to modify this theme to suit your needs.</p>
 
       <footer class="entry-meta">
           
@@ -364,7 +362,7 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="\/hpstr-hugo-theme\/js\/vendor\/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="/hpstr-hugo-theme/assets/js/scripts.min.js"></script>
+<script src="/hpstr-hugo-theme/js/scripts.min.js"></script>
 
 
 
