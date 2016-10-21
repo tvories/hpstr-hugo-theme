@@ -649,16 +649,16 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
     </item>
     
     <item>
-      <title>About the Jekyll Theme</title>
+      <title>About the Hugo Theme</title>
       <link>https://dldx.github.io/hpstr-hugo-theme/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dldx.github.io/hpstr-hugo-theme/about/</guid>
       <description>
 
-&lt;p&gt;This theme has been ported to Hugo by &lt;a href=&#34;https://github.com/dldx&#34;&gt;dldx&lt;/a&gt; but the all the original features are intact and described below.&lt;/p&gt;
+&lt;p&gt;This theme has been ported to Hugo by &lt;a href=&#34;https://github.com/dldx&#34;&gt;Durand D&amp;rsquo;souza&lt;/a&gt; but the all the original features are intact and described below. All credit for the theme goes to&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;michael-rose-http-github-com-mmistakes:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;&lt;a href=&#34;http://github.com/mmistakes&#34;&gt;Michael Rose&lt;/a&gt;.&lt;/h2&gt;
 
 &lt;p&gt;They say three times the charm, so here is another free responsive Jekyll blog theme for you. I&amp;rsquo;ve learned a ton since open sourcing my first two themes &lt;a href=&#34;http://github.com/mmistakes&#34;&gt;on Github&lt;/a&gt;, and wanted to try a few new things this time around.&lt;/p&gt;
 
