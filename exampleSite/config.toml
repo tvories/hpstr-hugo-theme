@@ -1,4 +1,4 @@
-baseurl = "https://dldx.github.io/hpstr-hugo-theme"
+baseurl = ""
 languageCode = "en-gb"
 title = "HPSTR"
 theme = "hpstr"
