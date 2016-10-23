@@ -1,4 +1,5 @@
 # HPSTR
+![Them screenshot](https://raw.githubusercontent.com/dldx/hpstr-hugo-theme/master/exampleSite/static/images/screenshot.png)
 
 This is a port of the **HPSTR** theme to [Hugo](https://gohugo.io). All the original features are intact and described below. Credit for the theme goes entirely to [Michael Rose](http://github.com/mmistakes).
 
