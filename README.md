@@ -18,8 +18,8 @@ If you've used any of [my other themes](http://mademistakes.com/work/jekyll-them
 * Optional [Disqus](http://disqus.com) comments.
 * Simple and clear permalink structure[^1].
 * [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* [Custom 404 page](/404.html) to get you started.
-* [Syntax highlighting]({{< relref "posts/code-highlighting-post.md" >}}) stylesheets to make your code examples look snazzy.
+* Custom 404 page to get you started.
+* Syntax highlighting stylesheets to make your code examples look snazzy.
 
 ## Get the theme
 With Git installed, run the following commands inside the Hugo site folder. If Hugo has not yet been installed, read the setup guide [here](https://gohugo.io/overview/installing/).
@@ -33,5 +33,3 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 You can get a zip of the latest version of the theme from the [home page](https://github.com/dldx/hpstr-hugo-theme) and extract it to the themes folder.
 
 [More info](https://dldx.github.io/hpstr-hugo-theme/theme-setup/)
-
-[^1]: Example: *domain.com/category-name/post-title*
