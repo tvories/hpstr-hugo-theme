@@ -20,6 +20,17 @@ If you've used any of [my other themes](http://mademistakes.com/work/jekyll-them
 * [Custom 404 page](/404.html) to get you started.
 * [Syntax highlighting]({{< relref "posts/code-highlighting-post.md" >}}) stylesheets to make your code examples look snazzy.
 
-[Get Started!](https://dldx.github.io/hpstr-hugo-theme/theme-setup/)
+## Get the theme
+With Git installed, run the following commands inside the Hugo site folder. If Hugo has not yet been installed, read the setup guide [here](https://gohugo.io/overview/installing/).
+
+```
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
+```
+
+You can get a zip of the latest version of the theme from the [home page](https://github.com/dldx/hpstr-hugo-theme) and extract it to the themes folder.
+
+[More info](https://dldx.github.io/hpstr-hugo-theme/theme-setup/)
 
 [^1]: Example: *domain.com/category-name/post-title*
