@@ -43,7 +43,6 @@
     {{ if ne .Params.comments false }}
     <section id="disqus_thread">{{ partial "disqus.html" . }}</section><!-- /#disqus_thread -->
     {{ end }}
-    <!--{{ if ne .Type "page" }}{% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}{{ end }} -->
   </article>
 </div><!-- /#main -->
 {{ partial "foot.html" . }}

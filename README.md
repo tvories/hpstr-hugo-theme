@@ -1,5 +1,5 @@
 # HPSTR
-![Them screenshot](https://raw.githubusercontent.com/dldx/hpstr-hugo-theme/master/exampleSite/static/images/screenshot.png)
+![Theme screenshot](https://raw.githubusercontent.com/dldx/hpstr-hugo-theme/master/images/screenshot.png)
 
 This is a port of the [HPSTR theme](http://github.com/mmistakes/hpstr-jekyll-theme) to [Hugo](https://gohugo.io). All the original features are intact and described below. Credit for the theme goes entirely to [Michael Rose](http://github.com/mmistakes).
 
