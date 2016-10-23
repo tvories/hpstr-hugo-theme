@@ -38,7 +38,9 @@
       </div><!-- /.entry-image -->
     {{ end }}
     <div class="entry-meta">
+        {{ if gt .Date 0001 }} <!-- If Date is set (greater than year 0001) -->
 		<span class="entry-date date published updated"><time datetime="{{ .Date }}"><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></time></span>
+        {{ end }}
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         Reading time ~{{ if le .ReadingTime 1 }}1 minute{{ else }}{{ .ReadingTime }} minutes{{ end }}

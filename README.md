@@ -1,9 +1,5 @@
----
-title: About this theme
-comments: false
-weight: -1
-type: post
----
+# HPSTR
+
 This is a port of the **HPSTR** theme to [Hugo](https://gohugo.io). All the original features are intact and described below. Credit for the theme goes entirely to [Michael Rose](http://github.com/mmistakes).
 
 ---
@@ -24,6 +20,6 @@ If you've used any of [my other themes](http://mademistakes.com/work/jekyll-them
 * [Custom 404 page](/404.html) to get you started.
 * [Syntax highlighting]({{< relref "posts/code-highlighting-post.md" >}}) stylesheets to make your code examples look snazzy.
 
-<div markdown="0"><a href="{{< relref "theme-setup.md" >}}" class="btn btn-info">Theme Setup</a> <a href="https://github.com/dldx/hpstr-hugo-theme" class="btn btn-success">Download HPSTR</a></div>
+[Get Started!](https://dldx.github.io/hpstr-hugo-theme/theme-setup/)
 
 [^1]: Example: *domain.com/category-name/post-title*

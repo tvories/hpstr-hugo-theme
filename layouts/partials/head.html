@@ -46,7 +46,7 @@
 <!-- Icons -->
 <link rel="shortcut icon" href="{{ "/favicon.png" | relURL }}">
 
-{{ with .Params.background }}
-<style type="text/css">body {background-image:url({{ . | relURL }});}</style>
+{{ with $.Param "background" }}
+<style type="text/css">body {background-image:url({{ . }});}</style>
 {{ end }}
 </head>

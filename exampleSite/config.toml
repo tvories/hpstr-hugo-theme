@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "https://dldx.github.io/hpstr-hugo-theme"
 languageCode = "en-gb"
 title = "HPSTR"
 theme = "hpstr"
@@ -6,15 +6,14 @@ pluralizelisttitles = false
 PygmentsCodeFences = true
 Paginate = 5
 disqusShortname = "hpstrhugo"
-relativeurls = true
 
 [params]
 	subtitle = "An elegant, responsive theme for Hugo"
 	[params.author]
-		name = "Hugo"
+		name = "HPSTR"
 		avatar = "/images/avatar.jpg"
-		bio = "A static site generator written in Go"
-		github = "spf13/hugo"
+		bio = "An elegant, responsive theme for Hugo"
+		github = "dldx/hpstr-hugo-theme"
 	[params.image]
 	  feature = "/images/abstract-1.jpg"
 	  credit = "dargadgetz"
