@@ -6,190 +6,49 @@
     <description>Recent content on HPSTR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 01 Jun 2016 15:14:43 -0400</lastBuildDate>
     <atom:link href="https://dldx.github.io/hpstr-hugo-theme/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Theme Setup</title>
-      <link>https://dldx.github.io/hpstr-hugo-theme/theme-setup/</link>
-      <pubDate>Wed, 01 Jun 2016 15:14:43 -0400</pubDate>
+      <title>About this theme</title>
+      <link>https://dldx.github.io/hpstr-hugo-theme/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dldx.github.io/hpstr-hugo-theme/theme-setup/</guid>
+      <guid>https://dldx.github.io/hpstr-hugo-theme/about/</guid>
       <description>
 
-&lt;p&gt;This is a port of the &lt;strong&gt;HPSTR&lt;/strong&gt; theme to &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. This theme is perfect for bloggers.&lt;/p&gt;
-
-&lt;h2 id=&#34;get-the-theme:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Get the theme&lt;/h2&gt;
-
-&lt;p&gt;With Git installed, run the following commands inside the Hugo site folder. If Hugo has not yet been installed, read the setup guide &lt;a href=&#34;https://gohugo.io/overview/installing/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;$ mkdir themes
-$ &lt;span style=&#34;color: #f8f8f2&#34;&gt;cd&lt;/span&gt; themes
-$ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;You can get a zip of the latest version of the theme from the &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme&#34;&gt;home page&lt;/a&gt; and extract it to the themes folder.&lt;/p&gt;
-
-&lt;h2 id=&#34;setup:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Setup&lt;/h2&gt;
-
-&lt;p&gt;Next, you need to configure your site and add some content. We provide a complete example site under the folder &lt;code&gt;exampleSite&lt;/code&gt;. All you need to do is copy the contents of that folder into the main hugo site folder so that it looks something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;hugo-website
-├── config.toml
-├── content
-│   └── posts
-├── data
-├── static
-│   ├── assets
-│   │   ├── css
-│   │   ├── fonts
-│   │   └── js
-│   │       ├── plugins
-│   │       └── vendor
-│   └── images
-└── themes
-    └── hpstr
-        ├── archetypes
-        ├── layouts
-        │   ├── _default
-        │   └── partials
-        └── static
-            ├── css
-            │   └── _sass
-            │       └── vendor
-            │           ├── font-awesome
-            │           └── magnific-popup
-            ├── fonts
-            └── js
-                ├── plugins
-                └── vendor
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This should be enough to get a working website!&lt;/p&gt;
+&lt;p&gt;This is a port of the &lt;strong&gt;HPSTR&lt;/strong&gt; theme to &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. All the original features are intact and described below. Credit for the theme goes entirely to &lt;a href=&#34;http://github.com/mmistakes&#34;&gt;Michael Rose&lt;/a&gt;.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;running-hugo:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Running Hugo&lt;/h2&gt;
+&lt;p&gt;They say three times the charm, so here is another free responsive Jekyll blog theme for you. I&amp;rsquo;ve learned a ton since open sourcing my first two themes &lt;a href=&#34;http://github.com/mmistakes&#34;&gt;on Github&lt;/a&gt;, and wanted to try a few new things this time around.&lt;/p&gt;
 
-&lt;p&gt;To serve the site while you write posts, simply run &lt;code&gt;hugo server&lt;/code&gt; in the base folder. You can now edit and make new posts, which will show up instantly. To render a permanent site, run &lt;code&gt;hugo&lt;/code&gt; on its own.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve used any of &lt;a href=&#34;http://mademistakes.com/work/jekyll-themes/&#34;&gt;my other themes&lt;/a&gt; most of this should be familiar territory&amp;hellip;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;hpstr-features:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;HPSTR Features:&lt;/h2&gt;
 
-&lt;h2 id=&#34;configuration:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Configuration&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Responsive templates for post, page, and post index &lt;code&gt;layouts&lt;/code&gt;. Looks great on mobile, tablet, and desktop devices.&lt;/li&gt;
+&lt;li&gt;Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Sweet animated menu.&lt;/li&gt;
+&lt;li&gt;Background image support.&lt;/li&gt;
+&lt;li&gt;Support for large images to call out your favorite posts.&lt;/li&gt;
+&lt;li&gt;Optional &lt;a href=&#34;http://disqus.com&#34;&gt;Disqus&lt;/a&gt; comments.&lt;/li&gt;
+&lt;li&gt;Simple and clear permalink structure&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.facebook.com/docs/opengraph/&#34;&gt;Open Graph&lt;/a&gt; and &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;Twitter Cards&lt;/a&gt; support for a better social sharing experience.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/404.html&#34;&gt;Custom 404 page&lt;/a&gt; to get you started.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/posts/code-highlighting-post/&#34;&gt;Syntax highlighting&lt;/a&gt; stylesheets to make your code examples look snazzy.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&#34;disqus-comments:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Disqus Comments&lt;/h3&gt;
-
-&lt;p&gt;Create a &lt;a href=&#34;http://disqus.com&#34;&gt;Disqus&lt;/a&gt; account and change &lt;code&gt;disqusShortname&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; to the Disqus &lt;em&gt;shortname&lt;/em&gt; you just setup. By default comments appear on all post and pages if you assigned a shortname. Note that comments won&amp;rsquo;t generally load when you are running the server locally. To disable commenting on a post or page, add the following to its YAML Front Matter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;comments&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;false&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;social-share-links:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Social Share Links&lt;/h3&gt;
-
-&lt;p&gt;To disable Facebook, Twitter, and Google+ share links on a post or page, add the following to its front matter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;share&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;false&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;owner-author-information:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Owner/Author Information&lt;/h3&gt;
-
-&lt;p&gt;Change your name, and avatar photo (200x200 pixels or larger), email, and social networking URLs in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To add a copyright string to the footer, add &lt;code&gt;copyright = &amp;quot;(c) Blah&amp;quot;&lt;/code&gt; to &lt;code&gt;config.toml&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;google-analytics-and-webmaster-tools:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Google Analytics and Webmaster Tools&lt;/h3&gt;
-
-&lt;p&gt;To add Google Analytics, you may add your tracking id to &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;googleAnalytics = &amp;quot;UA-123-45&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;navigation-links:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Navigation Links&lt;/h3&gt;
-
-&lt;p&gt;To add additional links in the drop down menu edit &lt;code&gt;data/navigation.toml&lt;/code&gt;. Use the following format to set the URL and title for as many links as you&amp;rsquo;d like. &lt;em&gt;External links will open in a new window.&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;[[links]]&lt;/span&gt;
-&lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Theme Setup&amp;quot;&lt;/span&gt;
-&lt;span style=&#34;color: #a6e22e&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;/theme-setup/&amp;quot;&lt;/span&gt;
-
-&lt;span style=&#34;color: #66d9ef&#34;&gt;[[links]]&lt;/span&gt;
-&lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;External Link&amp;quot;&lt;/span&gt;
-&lt;span style=&#34;color: #a6e22e&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;http://mademistakes.com&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div markdown=&#34;0&#34;&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/theme-setup/&#34; class=&#34;btn btn-info&#34;&gt;Theme Setup&lt;/a&gt; &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme&#34; class=&#34;btn btn-success&#34;&gt;Download HPSTR&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;adding-new-content:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Adding New Content&lt;/h2&gt;
-
-&lt;p&gt;Posts are stored in the &lt;code&gt;content&lt;/code&gt; directory. By default, only content in the &lt;code&gt;content/posts&lt;/code&gt; will show up in the &lt;code&gt;All Posts&lt;/code&gt; section, however, you can link to other sections manually. For example, if you create a post at &lt;code&gt;gallery/photo1.md&lt;/code&gt;, your post will appear both under the home page and under &lt;code&gt;/gallery&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;By the way, Hugo has a shortcut for creating new posts: &lt;code&gt;hugo new gallery/photo1.md&lt;/code&gt;. See &lt;code&gt;hugo new --help&lt;/code&gt; for more details.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;feature-images:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Feature Images&lt;/h3&gt;
-
-&lt;p&gt;A good rule of thumb is to keep feature images nice and wide so you don&amp;rsquo;t push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices.&lt;/p&gt;
-
-&lt;p&gt;To add a feature image to a post or page just include the filename in the front matter like so.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;image&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt;
-  &lt;span style=&#34;color: #ae81ff&#34;&gt;feature&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;/images/feature-image-filename.jpg&lt;/span&gt;
-  &lt;span style=&#34;color: #ae81ff&#34;&gt;thumb&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;thumbnail-image.jpg&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;#keep it square 200x200 px is good&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;If you want to apply attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;image&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt;
-  &lt;span style=&#34;color: #ae81ff&#34;&gt;feature&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;feature-image-filename.jpg&lt;/span&gt;
-  &lt;span style=&#34;color: #ae81ff&#34;&gt;credit&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;Michael Rose&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;#name of the person or site you want to credit&lt;/span&gt;
-  &lt;span style=&#34;color: #ae81ff&#34;&gt;creditlink&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;http://mademistakes.com&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;#url to their site or licensing&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;By default the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; containing feature images is set to have a minimum height of 400px with CSS. Anything taller is hidden with an &lt;code&gt;overflow: hidden&lt;/code&gt; declaration. You can customize the height of the homepage feature image and those appearing on posts/pages by modifying the following variables in &lt;code&gt;/static/css/_sass/_variables.scss&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$feature-image-height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// min 150px recommended&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;$front-page-feature-image-height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// min 150px recommended&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&#34;post-page-thumbnails-for-og-and-twitter-cards:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Post/Page Thumbnails for OG and Twitter Cards&lt;/h4&gt;
-
-&lt;p&gt;Post and page thumbnails work the same way. These are used by &lt;a href=&#34;https://developers.facebook.com/docs/opengraph/&#34;&gt;Open Graph&lt;/a&gt; and &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;Twitter Cards&lt;/a&gt; meta tags found in &lt;code&gt;partials/twitter-og-cards.html&lt;/code&gt;. If you don&amp;rsquo;t assign a thumbnail the image you assigned to &lt;code&gt;params.author.avatar&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; will be used.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post&amp;rsquo;s YAML.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dldx.github.io/hpstr-hugo-theme/images/twitter-card-summary-large-image.jpg&#34; alt=&#34;Twitter Card summary large image screenshot&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to &lt;code&gt;head.html&lt;/code&gt; to support this, you just need to &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;validate and apply your domain&lt;/a&gt; to turn it on.&lt;/p&gt;
-
-&lt;h3 id=&#34;videos:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&#34;http://fitvidsjs.com/&#34;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;link-post-type:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Link Post Type&lt;/h3&gt;
-
-&lt;p&gt;Link blog like a champ by adding &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to a post&amp;rsquo;s YAML front matter. Arrow glyph links to the post&amp;rsquo;s permalink and the the &lt;code&gt;post-title&lt;/code&gt; links to the source URL. Here&amp;rsquo;s an &lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/posts/sample-link-post/&#34;&gt;example of a link post&lt;/a&gt; if you need a visual.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;further-customization:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Further Customization&lt;/h2&gt;
-
-&lt;p&gt;By editing values found in &lt;code&gt;static/css/_sass/variables.scss&lt;/code&gt; you can fine tune the site&amp;rsquo;s colors and typography. You will need a &lt;a href=&#34;http://sass-lang.com&#34;&gt;sass processor&lt;/a&gt; to render the files to css.&lt;/p&gt;
-
-&lt;p&gt;For example if you wanted a red background instead of white you&amp;rsquo;d change &lt;code&gt;$bodycolor: #fff;&lt;/code&gt; to &lt;code&gt;$bodycolor: $cc0033;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note from dldx: I haven&amp;rsquo;t changed the Gruntfile to work for hugo yet. If anyone would like to submit a PR, feel free! :) The following is just the original documentation for this theme&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;To modify the site&amp;rsquo;s JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into &lt;code&gt;scripts.min.js&lt;/code&gt;. &lt;a href=&#34;http://nodejs.org/&#34;&gt;Install Node.js&lt;/a&gt;, then &lt;a href=&#34;http://gruntjs.com/getting-started&#34;&gt;install Grunt&lt;/a&gt;, and then finally install the dependencies for the theme contained in &lt;code&gt;package.json&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;npm install
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;From the theme&amp;rsquo;s root, use &lt;code&gt;grunt&lt;/code&gt; to concatenate JavaScript files and optimize &lt;code&gt;.jpg&lt;/code&gt;, &lt;code&gt;.png&lt;/code&gt; and &lt;code&gt;.svg&lt;/code&gt; files in the &lt;code&gt;images/&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;You can also use &lt;code&gt;grunt dev&lt;/code&gt; in combination with &lt;code&gt;bundle exec jekyll serve&lt;/code&gt; to watch for updates in JS files that Grunt will then automatically re-build as you write your code, which will in turn auto-generate your Jekyll site when developing locally.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;questions:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Questions?&lt;/h2&gt;
-
-&lt;p&gt;Having a problem getting something to work or want to know why I setup something in a certain way? You can contact me on &lt;a href=&#34;https://github.com/dldx&#34;&gt;github&lt;/a&gt; or &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme/issues/new&#34;&gt;file a GitHub Issue&lt;/a&gt;. And if you make something cool with this theme feel free to let me know.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;license:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;This theme is free and open source software, distributed under the &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme/blob/master/LICENSE.md&#34;&gt;MIT License&lt;/a&gt; version 2 or later. So feel free to to modify this theme to suit your needs.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;Example: &lt;em&gt;domain.com/category-name/post-title&lt;/em&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -205,7 +64,7 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
 
 &lt;p&gt;This little bit of YAML makes the assumption that your background image asset is in the &lt;code&gt;/images&lt;/code&gt; folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.&lt;/p&gt;
 
-&lt;p&gt;If you want to set a background image for the entire site just add &lt;code&gt;background: filename.png&lt;/code&gt; as a param in your &lt;code&gt;_config.yml&lt;/code&gt; and BOOM &amp;mdash; background images on every page!&lt;/p&gt;
+&lt;p&gt;If you want to set a background image for the entire site just add &lt;code&gt;background: /images/filename.png&lt;/code&gt; as a &lt;a href=&#34;https://gohugo.io/overview/configuration/#examples&#34;&gt;param&lt;/a&gt; in your config and BOOM &amp;mdash; background images on every page!&lt;/p&gt;
 
 &lt;div xmlns:cc=&#34;http://creativecommons.org/ns#&#34; xmlns:dct=&#34;http://purl.org/dc/terms/&#34; about=&#34;http://subtlepatterns.com&#34; class=&#34;notice&#34;&gt;Background images from &lt;span property=&#34;dct:title&#34;&gt;Subtle Patterns&lt;/span&gt; (&lt;a rel=&#34;cc:attributionURL&#34; property=&#34;cc:attributionName&#34; href=&#34;http://subtlepatterns.com&#34;&gt;Subtle Patterns&lt;/a&gt;) / &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;
 </description>
@@ -649,46 +508,188 @@ $ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
     </item>
     
     <item>
-      <title>About the Hugo Theme</title>
-      <link>https://dldx.github.io/hpstr-hugo-theme/about/</link>
+      <title>Theme Setup</title>
+      <link>https://dldx.github.io/hpstr-hugo-theme/theme-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dldx.github.io/hpstr-hugo-theme/about/</guid>
+      <guid>https://dldx.github.io/hpstr-hugo-theme/theme-setup/</guid>
       <description>
 
-&lt;p&gt;This theme has been ported to Hugo by &lt;a href=&#34;https://github.com/dldx&#34;&gt;Durand D&amp;rsquo;souza&lt;/a&gt; but the all the original features are intact and described below. All credit for the theme goes to &lt;a href=&#34;http://github.com/mmistakes&#34;&gt;Michael Rose&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a port of the &lt;strong&gt;HPSTR&lt;/strong&gt; theme to &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. This theme is perfect for bloggers.&lt;/p&gt;
+
+&lt;h2 id=&#34;get-the-theme:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Get the theme&lt;/h2&gt;
+
+&lt;p&gt;With Git installed, run the following commands inside the Hugo site folder. If Hugo has not yet been installed, read the setup guide &lt;a href=&#34;https://gohugo.io/overview/installing/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;$ mkdir themes
+$ &lt;span style=&#34;color: #f8f8f2&#34;&gt;cd&lt;/span&gt; themes
+$ git clone https://github.com/dldx/hpstr-hugo-theme.git hpstr
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can get a zip of the latest version of the theme from the &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme&#34;&gt;home page&lt;/a&gt; and extract it to the themes folder.&lt;/p&gt;
+
+&lt;h2 id=&#34;setup:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Next, you need to configure your site and add some content. We provide a complete example site under the folder &lt;code&gt;exampleSite&lt;/code&gt;. All you need to do is copy the contents of that folder into the main hugo site folder so that it looks something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;hugo-website
+├── config.toml
+├── content
+│   └── posts
+├── data
+├── static
+│   ├── assets
+│   │   ├── css
+│   │   ├── fonts
+│   │   └── js
+│   │       ├── plugins
+│   │       └── vendor
+│   └── images
+└── themes
+    └── hpstr
+        ├── archetypes
+        ├── layouts
+        │   ├── _default
+        │   └── partials
+        └── static
+            ├── css
+            │   └── _sass
+            │       └── vendor
+            │           ├── font-awesome
+            │           └── magnific-popup
+            ├── fonts
+            └── js
+                ├── plugins
+                └── vendor
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This should be enough to get a working website!&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;They say three times the charm, so here is another free responsive Jekyll blog theme for you. I&amp;rsquo;ve learned a ton since open sourcing my first two themes &lt;a href=&#34;http://github.com/mmistakes&#34;&gt;on Github&lt;/a&gt;, and wanted to try a few new things this time around.&lt;/p&gt;
+&lt;h2 id=&#34;running-hugo:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Running Hugo&lt;/h2&gt;
 
-&lt;p&gt;If you&amp;rsquo;ve used any of &lt;a href=&#34;http://mademistakes.com/work/jekyll-themes/&#34;&gt;my other themes&lt;/a&gt; most of this should be familiar territory&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;hpstr-features:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;HPSTR Features:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Responsive templates for post, page, and post index &lt;code&gt;layouts&lt;/code&gt;. Looks great on mobile, tablet, and desktop devices.&lt;/li&gt;
-&lt;li&gt;Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Sweet animated menu.&lt;/li&gt;
-&lt;li&gt;Background image support.&lt;/li&gt;
-&lt;li&gt;Support for large images to call out your favorite posts.&lt;/li&gt;
-&lt;li&gt;Optional &lt;a href=&#34;http://disqus.com&#34;&gt;Disqus&lt;/a&gt; comments.&lt;/li&gt;
-&lt;li&gt;Simple and clear permalink structure&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://developers.facebook.com/docs/opengraph/&#34;&gt;Open Graph&lt;/a&gt; and &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;Twitter Cards&lt;/a&gt; support for a better social sharing experience.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/404.html&#34;&gt;Custom 404 page&lt;/a&gt; to get you started.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/posts/code-highlighting-post/&#34;&gt;Syntax highlighting&lt;/a&gt; stylesheets to make your code examples look snazzy.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div markdown=&#34;0&#34;&gt;&lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/theme-setup/&#34; class=&#34;btn btn-info&#34;&gt;Theme Setup&lt;/a&gt; &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme&#34; class=&#34;btn btn-success&#34;&gt;Download HPSTR&lt;/a&gt;&lt;/div&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
+&lt;p&gt;To serve the site while you write posts, simply run &lt;code&gt;hugo server&lt;/code&gt; in the base folder. You can now edit and make new posts, which will show up instantly. To render a permanent site, run &lt;code&gt;hugo&lt;/code&gt; on its own.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;ol&gt;
-&lt;li id=&#34;fn:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;Example: &lt;em&gt;domain.com/category-name/post-title&lt;/em&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:6083a88ee3411b0d17ce02d738f69d47:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+&lt;h2 id=&#34;configuration:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Configuration&lt;/h2&gt;
+
+&lt;h3 id=&#34;disqus-comments:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Disqus Comments&lt;/h3&gt;
+
+&lt;p&gt;Create a &lt;a href=&#34;http://disqus.com&#34;&gt;Disqus&lt;/a&gt; account and change &lt;code&gt;disqusShortname&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; to the Disqus &lt;em&gt;shortname&lt;/em&gt; you just setup. By default comments appear on all post and pages if you assigned a shortname. Note that comments won&amp;rsquo;t generally load when you are running the server locally. To disable commenting on a post or page, add the following to its YAML Front Matter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;comments&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;false&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;social-share-links:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Social Share Links&lt;/h3&gt;
+
+&lt;p&gt;To disable Facebook, Twitter, and Google+ share links on a post or page, add the following to its front matter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;share&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;false&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;owner-author-information:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Owner/Author Information&lt;/h3&gt;
+
+&lt;p&gt;Change your name, and avatar photo (200x200 pixels or larger), email, and social networking URLs in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To add a copyright string to the footer, add &lt;code&gt;copyright = &amp;quot;(c) Blah&amp;quot;&lt;/code&gt; to &lt;code&gt;config.toml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;google-analytics-and-webmaster-tools:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Google Analytics and Webmaster Tools&lt;/h3&gt;
+
+&lt;p&gt;To add Google Analytics, you may add your tracking id to &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;googleAnalytics = &amp;quot;UA-123-45&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;navigation-links:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Navigation Links&lt;/h3&gt;
+
+&lt;p&gt;To add additional links in the drop down menu edit &lt;code&gt;data/navigation.toml&lt;/code&gt;. Use the following format to set the URL and title for as many links as you&amp;rsquo;d like. &lt;em&gt;External links will open in a new window.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;[[links]]&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Theme Setup&amp;quot;&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;/theme-setup/&amp;quot;&lt;/span&gt;
+
+&lt;span style=&#34;color: #66d9ef&#34;&gt;[[links]]&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;External Link&amp;quot;&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;http://mademistakes.com&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;adding-new-content:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Adding New Content&lt;/h2&gt;
+
+&lt;p&gt;Posts are stored in the &lt;code&gt;content&lt;/code&gt; directory. By default, only content in the &lt;code&gt;content/posts&lt;/code&gt; will show up in the &lt;code&gt;All Posts&lt;/code&gt; section, however, you can link to other sections manually. For example, if you create a post at &lt;code&gt;gallery/photo1.md&lt;/code&gt;, your post will appear both under the home page and under &lt;code&gt;/gallery&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;By the way, Hugo has a shortcut for creating new posts: &lt;code&gt;hugo new gallery/photo1.md&lt;/code&gt;. See &lt;code&gt;hugo new --help&lt;/code&gt; for more details.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;feature-images:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Feature Images&lt;/h3&gt;
+
+&lt;p&gt;A good rule of thumb is to keep feature images nice and wide so you don&amp;rsquo;t push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices.&lt;/p&gt;
+
+&lt;p&gt;To add a feature image to a post or page just include the filename in the front matter like so.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;image&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt;
+  &lt;span style=&#34;color: #ae81ff&#34;&gt;feature&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;/images/feature-image-filename.jpg&lt;/span&gt;
+  &lt;span style=&#34;color: #ae81ff&#34;&gt;thumb&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;thumbnail-image.jpg&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;#keep it square 200x200 px is good&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want to apply attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;image&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt;
+  &lt;span style=&#34;color: #ae81ff&#34;&gt;feature&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;feature-image-filename.jpg&lt;/span&gt;
+  &lt;span style=&#34;color: #ae81ff&#34;&gt;credit&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;Michael Rose&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;#name of the person or site you want to credit&lt;/span&gt;
+  &lt;span style=&#34;color: #ae81ff&#34;&gt;creditlink&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;http://mademistakes.com&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;#url to their site or licensing&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;By default the &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; containing feature images is set to have a minimum height of 400px with CSS. Anything taller is hidden with an &lt;code&gt;overflow: hidden&lt;/code&gt; declaration. You can customize the height of the homepage feature image and those appearing on posts/pages by modifying the following variables in &lt;code&gt;/static/css/_sass/_variables.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$feature-image-height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// min 150px recommended&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;$front-page-feature-image-height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// min 150px recommended&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;post-page-thumbnails-for-og-and-twitter-cards:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Post/Page Thumbnails for OG and Twitter Cards&lt;/h4&gt;
+
+&lt;p&gt;Post and page thumbnails work the same way. These are used by &lt;a href=&#34;https://developers.facebook.com/docs/opengraph/&#34;&gt;Open Graph&lt;/a&gt; and &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;Twitter Cards&lt;/a&gt; meta tags found in &lt;code&gt;partials/twitter-og-cards.html&lt;/code&gt;. If you don&amp;rsquo;t assign a thumbnail the image you assigned to &lt;code&gt;params.author.avatar&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; will be used.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example of what a tweet to your site could look like if you activate Twitter Cards and include all the metas in your post&amp;rsquo;s YAML.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dldx.github.io/hpstr-hugo-theme/images/twitter-card-summary-large-image.jpg&#34; alt=&#34;Twitter Card summary large image screenshot&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to &lt;code&gt;head.html&lt;/code&gt; to support this, you just need to &lt;a href=&#34;https://dev.twitter.com/docs/cards&#34;&gt;validate and apply your domain&lt;/a&gt; to turn it on.&lt;/p&gt;
+
+&lt;h3 id=&#34;videos:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&#34;http://fitvidsjs.com/&#34;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;link-post-type:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Link Post Type&lt;/h3&gt;
+
+&lt;p&gt;Link blog like a champ by adding &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to a post&amp;rsquo;s YAML front matter. Arrow glyph links to the post&amp;rsquo;s permalink and the the &lt;code&gt;post-title&lt;/code&gt; links to the source URL. Here&amp;rsquo;s an &lt;a href=&#34;https://dldx.github.io/hpstr-hugo-theme/hpstr-hugo-theme/posts/sample-link-post/&#34;&gt;example of a link post&lt;/a&gt; if you need a visual.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;further-customization:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Further Customization&lt;/h2&gt;
+
+&lt;p&gt;By editing values found in &lt;code&gt;static/css/_sass/variables.scss&lt;/code&gt; you can fine tune the site&amp;rsquo;s colors and typography. You will need a &lt;a href=&#34;http://sass-lang.com&#34;&gt;sass processor&lt;/a&gt; to render the files to css.&lt;/p&gt;
+
+&lt;p&gt;For example if you wanted a red background instead of white you&amp;rsquo;d change &lt;code&gt;$bodycolor: #fff;&lt;/code&gt; to &lt;code&gt;$bodycolor: $cc0033;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note from dldx: I haven&amp;rsquo;t changed the Gruntfile to work for hugo yet. If anyone would like to submit a PR, feel free! :) The following is just the original documentation for this theme&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;To modify the site&amp;rsquo;s JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into &lt;code&gt;scripts.min.js&lt;/code&gt;. &lt;a href=&#34;http://nodejs.org/&#34;&gt;Install Node.js&lt;/a&gt;, then &lt;a href=&#34;http://gruntjs.com/getting-started&#34;&gt;install Grunt&lt;/a&gt;, and then finally install the dependencies for the theme contained in &lt;code&gt;package.json&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;npm install
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;From the theme&amp;rsquo;s root, use &lt;code&gt;grunt&lt;/code&gt; to concatenate JavaScript files and optimize &lt;code&gt;.jpg&lt;/code&gt;, &lt;code&gt;.png&lt;/code&gt; and &lt;code&gt;.svg&lt;/code&gt; files in the &lt;code&gt;images/&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;You can also use &lt;code&gt;grunt dev&lt;/code&gt; in combination with &lt;code&gt;bundle exec jekyll serve&lt;/code&gt; to watch for updates in JS files that Grunt will then automatically re-build as you write your code, which will in turn auto-generate your Jekyll site when developing locally.&lt;/p&gt;
+
+&lt;p&gt;For more information on how to configure Hugo or content, check out the &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;questions:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;Questions?&lt;/h2&gt;
+
+&lt;p&gt;Having a problem getting something to work or want to know why I setup something in a certain way? You can contact me on &lt;a href=&#34;https://github.com/dldx&#34;&gt;github&lt;/a&gt; or &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme/issues/new&#34;&gt;file a GitHub Issue&lt;/a&gt;. And if you make something cool with this theme feel free to let me know.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;license:b8b08bb87737c3c5c8e714d4f8821e60&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;This theme is free and open source software, distributed under the &lt;a href=&#34;https://github.com/dldx/hpstr-hugo-theme/blob/master/LICENSE.md&#34;&gt;MIT License&lt;/a&gt; version 2 or later. So feel free to to modify this theme to suit your needs.&lt;/p&gt;
 </description>
     </item>
     

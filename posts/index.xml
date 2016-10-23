@@ -21,7 +21,7 @@
 
 &lt;p&gt;This little bit of YAML makes the assumption that your background image asset is in the &lt;code&gt;/images&lt;/code&gt; folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.&lt;/p&gt;
 
-&lt;p&gt;If you want to set a background image for the entire site just add &lt;code&gt;background: filename.png&lt;/code&gt; as a param in your &lt;code&gt;_config.yml&lt;/code&gt; and BOOM &amp;mdash; background images on every page!&lt;/p&gt;
+&lt;p&gt;If you want to set a background image for the entire site just add &lt;code&gt;background: /images/filename.png&lt;/code&gt; as a &lt;a href=&#34;https://gohugo.io/overview/configuration/#examples&#34;&gt;param&lt;/a&gt; in your config and BOOM &amp;mdash; background images on every page!&lt;/p&gt;
 
 &lt;div xmlns:cc=&#34;http://creativecommons.org/ns#&#34; xmlns:dct=&#34;http://purl.org/dc/terms/&#34; about=&#34;http://subtlepatterns.com&#34; class=&#34;notice&#34;&gt;Background images from &lt;span property=&#34;dct:title&#34;&gt;Subtle Patterns&lt;/span&gt; (&lt;a rel=&#34;cc:attributionURL&#34; property=&#34;cc:attributionName&#34; href=&#34;http://subtlepatterns.com&#34;&gt;Subtle Patterns&lt;/a&gt;) / &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-sa/3.0/&#34;&gt;CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;
 </description>
