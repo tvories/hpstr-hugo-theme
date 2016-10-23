@@ -1,7 +1,7 @@
 # HPSTR
 ![Them screenshot](https://raw.githubusercontent.com/dldx/hpstr-hugo-theme/master/exampleSite/static/images/screenshot.png)
 
-This is a port of the **HPSTR** theme to [Hugo](https://gohugo.io). All the original features are intact and described below. Credit for the theme goes entirely to [Michael Rose](http://github.com/mmistakes).
+This is a port of the [HPSTR theme](http://github.com/mmistakes/hpstr-jekyll-theme) to [Hugo](https://gohugo.io). All the original features are intact and described below. Credit for the theme goes entirely to [Michael Rose](http://github.com/mmistakes).
 
 ---
 They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around.
