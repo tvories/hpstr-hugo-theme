@@ -3548,7 +3548,7 @@ svg:not(:root) {
     background: #fff;
     top: 10px;
     left: 16%;
-    box-shadow: 0 10px 0 #fff,  0 20px 0 #fff; }
+    box-shadow: 0 10px 0 #fff, 0 20px 0 #fff; }
   .dl-menuwrapper ul {
     padding: 0;
     list-style: none;
@@ -3586,8 +3586,14 @@ svg:not(:root) {
     .dl-menuwrapper li.dl-back > a {
       padding-left: 30px;
       background: rgba(0, 0, 0, 0.2); }
+    .dl-menuwrapper li.dl-icons {
+      margin-left: auto;
+      margin-right: auto; }
+      .dl-menuwrapper li.dl-icons a {
+        padding-right: 15px;
+        display: inline-block; }
     .dl-menuwrapper li.dl-back:after,
-    .dl-menuwrapper li > a:not(:only-child):after {
+    .dl-menuwrapper li > .dl-menuheader:after {
       position: absolute;
       top: 0;
       line-height: 50px;
@@ -3643,10 +3649,13 @@ svg:not(:root) {
   .dl-menuwrapper li .dl-submenu {
     display: none; }
 
-/* 
+.author-photo {
+  padding: 0px !important; }
+
+/*
 When a submenu is opened, we will hide all li siblings.
 For that we give a class to the parent menu called "dl-subview".
-We also hide the submenu link. 
+We also hide the submenu link.
 The opened submenu will get the class "dl-subviewopen".
 All this is done for any sub-level being entered.
 */

@@ -1,54 +1,47 @@
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
 	<ul class="dl-menu">
+			{{ with .Site.Params.author }}
+					{{ if isset . "avatar" }}
+				<li><a href="{{ "/about/" | relURL }}" class="author-photo"><img src="{{ .avatar | relURL }}" alt="{{ .name }}'s photo"></a></li>
+					{{ end }}
+				<li><h4>{{ .name }}</h4></li>
+				<li><p>{{ .bio }}</p></li>
+				<li class="dl-icons">
+				{{ if isset . "email" }}
+					<a href="mailto:{{ .email }}"><i class="fa fa-fw fa-envelope"></i></a>
+			{{ end }}
+				{{ if isset . "github" }}
+					<a href="https://github.com/{{ .github }}"><i class="fa fa-fw fa-github"></i></a>
+				{{ end }}
+				{{ if isset . "twitter" }}
+					<a href="https://twitter.com/{{ .twitter }}"><i class="fa fa-fw fa-twitter"></i></a>
+				{{ end }}
+				{{ if isset . "facebook" }}
+					<a href="https://facebook.com/{{ .facebook }}"><i class="fa fa-fw fa-facebook"></i></a>
+				{{ end }}
+				{{ if isset . "google_plus" }}
+					<a href="https://google.com/{{ .google_plus }}"><i class="fa fa-fw fa-google-plus"></i></a>
+				{{ end }}
+				{{ if isset . "linkedin" }}
+					<a href="https://linkedin.com/in/{{ .linkedin }}"><i class="fa fa-fw fa-linkedin"></i></a>
+				{{ end }}
+				{{ if isset . "stackexchange" }}
+					<a href="{{ .stackexchange }}"><i class="fa fa-fw fa-stack-exchange"></i></a>
+				{{ end }}
+				{{ if isset . "instagram" }}
+					<a href="https://instagram.com/{{ .instagram }}"><i class="fa fa-fw fa-instagram"></i></a>
+				{{ end }}
+				{{ if isset . "flickr" }}
+					<a href="https://www.flickr.com/photos/{{ .flickr }}"><i class="fa fa-fw fa-flickr"></i></a>
+				{{ end }}
+				{{ if isset . "tumblr" }}
+					<a href="http://{{ .tumblr }}.tumblr.com"><i class="fa fa-fw fa-tumblr"></i></a>
+				{{ end }}</li>
+			{{ end }}
 		<li><a href="{{ "/" | relURL }}">Home</a></li>
 		<li>
-			<a href="#">About</a>
-			<ul class="dl-submenu">
-			{{ with .Site.Params.author }}
-				<li>
-					{{ if isset . "avatar" }}
-					<img src="{{ .avatar | relURL }}" alt="{{ .name }}'s photo" class="author-photo">
-					{{ end }}
-					<h4>{{ .name }}</h4>
-					<p>{{ .bio }}</p>
-				</li>
-				<li><a href="{{ "/about/" | relURL }}"><span class="btn btn-inverse">Learn More</span></a></li>
-				{{ if isset . "email" }}<li>
-					<a href="mailto:{{ .email }}"><i class="fa fa-fw fa-envelope"></i> Email</a>
-				</li>{{ end }}
-				{{ if isset . "twitter" }}<li>
-					<a href="https://twitter.com/{{ .twitter }}"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
-				</li>{{ end }}
-				{{ if isset . "facebook" }}<li>
-					<a href="https://facebook.com/{{ .facebook }}"><i class="fa fa-fw fa-facebook"></i> Facebook</a>
-				</li>{{ end }}
-				{{ if isset . "google_plus" }}<li>
-					<a href="https://google.com/{{ .google_plus }}"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
-				</li>{{ end }}
-				{{ if isset . "linkedin" }}<li>
-					<a href="https://linkedin.com/in/{{ .linkedin }}"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
-				</li>{{ end }}
-				{{ if isset . "github" }}<li>
-					<a href="https://github.com/{{ .github }}"><i class="fa fa-fw fa-github"></i> GitHub</a>
-				</li>{{ end }}
-				{{ if isset . "stackexchange" }}<li>
-					<a href="{{ .stackexchange }}"><i class="fa fa-fw fa-stack-exchange"></i> Stackexchange</a>
-				</li>{{ end }}
-				{{ if isset . "instagram" }}<li>
-					<a href="https://instagram.com/{{ .instagram }}"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
-				</li>{{ end }}
-				{{ if isset . "flickr" }}<li>
-					<a href="https://www.flickr.com/photos/{{ .flickr }}"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
-				</li>{{ end }}
-				{{ if isset . "tumblr" }}<li>
-					<a href="http://{{ .tumblr }}.tumblr.com"><i class="fa fa-fw fa-tumblr"></i> Tumblr</a>
-				</li>{{ end }}
-			{{ end }}
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Posts</a>
+			<a class="dl-menuheader" href="#">Posts</a>
 			<ul class="dl-submenu">
 				<li><a href="{{ "/posts/" | relURL }}">All Posts</a></li>
 				<li><a href="{{ "/tags/" | relURL }}">All Tags</a></li>
