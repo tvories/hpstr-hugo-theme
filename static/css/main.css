@@ -3590,7 +3590,9 @@ svg:not(:root) {
       margin-left: auto;
       margin-right: auto; }
       .dl-menuwrapper li.dl-icons a {
-        padding-right: 15px;
+        padding-right: 0px;
+        font-size: 25px;
+        font-size: 1.5625rem;
         display: inline-block; }
     .dl-menuwrapper li.dl-back:after,
     .dl-menuwrapper li > .dl-menuheader:after {
