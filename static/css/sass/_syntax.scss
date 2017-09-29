@@ -44,9 +44,12 @@ code.highlight {
   }
 }
 
-.highlight pre { width: 100%; }
+.highlight pre {
+  width: 100%;
+  padding: 1em;
+ }
 
-.highlight {	
+.highlight {
 
 	.lineno { padding-right: 24px; color: #8f908a;}
 	.hll { background-color: #49483e }

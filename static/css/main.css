@@ -2864,7 +2864,8 @@ code.highlight {
     margin: 0; }
 
 .highlight pre {
-  width: 100%; }
+  width: 100%;
+  padding: 1em; }
 
 .highlight {
   /* Comment */
