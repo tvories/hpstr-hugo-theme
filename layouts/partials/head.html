@@ -10,10 +10,11 @@
 {{ if .IsHome }}
     {{ $.Scratch.Set "Params" .Site.Params }}
 {{ else if .IsNode }}
-    {{ $.Scratch.Set "Params" (index .Site.Data.sections (lower .Title)) }}
+        {{ $.Scratch.Set "Params" (index (.Site.Data.sections) (lower .Title)) }}
 {{ else }}
     {{ $.Scratch.Set "Params" .Params }}
 {{ end }}
+
 {{ if .Params.tags }}<meta name="keywords" content="{{ delimit .Params.tags ", " }}">{{ end }}
 
 <!-- Open Graph and Twitter cards -->
