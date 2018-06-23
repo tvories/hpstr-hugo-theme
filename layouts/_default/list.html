@@ -41,10 +41,12 @@
         {{ if gt .Date 0001 }} <!-- If Date is set (greater than year 0001) -->
 		<span class="entry-date date published updated"><time datetime="{{ .Date }}"><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></time></span>
         {{ end }}
+        {{ if (.Params.reading_time | default true) }}
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         Reading time ~{{ if le .ReadingTime 1 }}1 minute{{ else }}{{ .ReadingTime }} minutes{{ end }}
       </span><!-- /.entry-reading-time -->
+      {{ end }}
     </div><!-- /.entry-meta -->
     {{ if .Params.link }}
       <h1 class="entry-title"><a href="{{ .RelPermalink }}" class="permalink" rel="bookmark" title="{{ .Title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ .Params.link }}">{{ .Title }}</a></h1>

@@ -23,10 +23,12 @@
         {{ if and (ne .Type "page") (gt .Date 0001) }} <!-- If Date is set (greater than year 0001) -->
         <h2><span class="entry-date date published"><time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time></span></h2>
         {{ end }}
+        {{ if (.Params.reading_time | default true) }}
       <p class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
         Reading time ~{{ if le .ReadingTime 1 }}1 minute{{ else }}{{ .ReadingTime }} minutes{{ end }}
     </p><!-- /.entry-reading-time -->
+    {{ end }}
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
